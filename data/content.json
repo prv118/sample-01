@@ -1,0 +1,185 @@
+{
+  "site": {
+    "restaurantName": "Royal of Royal",
+    "tagline": "A Divine Culinary Journey Awaits",
+    "subTagline": "Where every meal is a masterpiece of flavor and elegance",
+    "heroImage": "../images/hero.png",
+    "phone": "+1 (800) 769-2567",
+    "email": "reservations@royalofroyalrestaurant.com",
+    "address": "123 Royal Avenue, Beverly Hills, CA 90210",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7152203583643!2d-118.4003563!3d34.0736208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147ab%3A0xd6c7c379fd081ed1!2sBeverly+Hills%2C+CA%2C+USA!5e0!3m2!1sen!2sus!4v1615999999999!5m2!1sen!2sus",
+    "aboutText": "Nestled in the heart of Beverly Hills, Royal of Royal has been an icon of culinary excellence since 1998. Our Executive Chef brings over 30 years of Michelin-starred experience to craft dishes that transcend mere dining—they are works of art. Every ingredient is sourced from the world's finest purveyors, every wine selected by our master sommelier, every detail curated with passion and precision.",
+    "aboutStory": "Founded by Viscount Theodore Ashworth III, Royal of Royal was born from a singular vision: to create a dining experience so extraordinary that guests would feel transported to another world. Two decades later, our three Michelin stars, four James Beard Awards, and the loyalty of discerning guests from over 80 countries stand as testament to that enduring commitment.",
+    "social": {
+      "instagram": "#",
+      "facebook": "#",
+      "twitter": "#",
+      "youtube": "#"
+    }
+  },
+  "menu": [
+    {
+      "id": 1,
+      "category": "starters",
+      "name": "Golden Caviar Blinis",
+      "description": "Hand-select Ossetra caviar on warm buckwheat blinis with crème fraîche and chive oil",
+      "price": "$85",
+      "image": "../images/starters.png",
+      "badge": "Chef's Pick"
+    },
+    {
+      "id": 2,
+      "category": "starters",
+      "name": "Seared Foie Gras",
+      "description": "Pan-seared duck foie gras, caramelized fig, brioche, aged balsamic reduction",
+      "price": "$68",
+      "image": "../images/starters.png",
+      "badge": ""
+    },
+    {
+      "id": 3,
+      "category": "starters",
+      "name": "Truffle Burrata",
+      "description": "Fresh burrata with shaved black truffle, heirloom tomatoes, aged extra-virgin olive oil",
+      "price": "$52",
+      "image": "../images/starters.png",
+      "badge": "Seasonal"
+    },
+    {
+      "id": 4,
+      "category": "starters",
+      "name": "Royal Lobster Bisque",
+      "description": "Velvety Maine lobster bisque, tarragon cream, cognac, lobster medallion",
+      "price": "$48",
+      "image": "../images/starters.png",
+      "badge": ""
+    },
+    {
+      "id": 5,
+      "category": "main",
+      "name": "A5 Wagyu Tenderloin",
+      "description": "Japanese A5 Wagyu, truffle jus, roasted bone marrow butter, gold-dusted truffle fries",
+      "price": "$220",
+      "image": "../images/main-course.png",
+      "badge": "Signature"
+    },
+    {
+      "id": 6,
+      "category": "main",
+      "name": "Atlantic Turbot Royale",
+      "description": "Wild Atlantic turbot, champagne beurre blanc, sea vegetables, caviar butter sauce",
+      "price": "$145",
+      "image": "../images/main-course.png",
+      "badge": ""
+    },
+    {
+      "id": 7,
+      "category": "main",
+      "name": "Royal Rack of Lamb",
+      "description": "Frenched Colorado rack of lamb, pistachio crust, rosemary au jus, dauphinoise potato",
+      "price": "$168",
+      "image": "../images/main-course.png",
+      "badge": ""
+    },
+    {
+      "id": 8,
+      "category": "main",
+      "name": "Black Truffle Risotto",
+      "description": "Arborio risotto, aged Parmigiano-Reggiano, freshly shaved Périgord black truffle",
+      "price": "$95",
+      "image": "../images/main-course.png",
+      "badge": "Vegetarian"
+    },
+    {
+      "id": 9,
+      "category": "desserts",
+      "name": "Chocolate Royal Dome",
+      "description": "Dark chocolate sphere, warm salted caramel poured tableside, gold leaf, raspberry sorbet",
+      "price": "$42",
+      "image": "../images/desserts.png",
+      "badge": "Signature"
+    },
+    {
+      "id": 10,
+      "category": "desserts",
+      "name": "Soufflé Grand Marnier",
+      "description": "Classic French soufflé, orange liqueur, Tahitian vanilla crème anglaise (20 min)",
+      "price": "$38",
+      "image": "../images/desserts.png",
+      "badge": ""
+    },
+    {
+      "id": 11,
+      "category": "desserts",
+      "name": "Mille-Feuille Royale",
+      "description": "Caramelized puff pastry, Tahitian vanilla diplomat cream, gold-dusted berries",
+      "price": "$35",
+      "image": "../images/desserts.png",
+      "badge": ""
+    },
+    {
+      "id": 12,
+      "category": "drinks",
+      "name": "Royal Champagne Ceremony",
+      "description": "Dom Pérignon Vintage, sabered tableside with hand-engraved crystal flutes",
+      "price": "$380",
+      "image": "../images/drinks.png",
+      "badge": "Exclusive"
+    },
+    {
+      "id": 13,
+      "category": "drinks",
+      "name": "Château Pétrus 2010",
+      "description": "Legendary Pomerol Grand Vin, decanted by our master sommelier",
+      "price": "$890",
+      "image": "../images/drinks.png",
+      "badge": "Rare"
+    },
+    {
+      "id": 14,
+      "category": "drinks",
+      "name": "Royal Crown Cocktail",
+      "description": "Hennessy XO, 24-karat gold shimmer, elderflower, smoked rosemary sprig",
+      "price": "$65",
+      "image": "../images/drinks.png",
+      "badge": "House Special"
+    },
+    {
+      "id": 15,
+      "category": "drinks",
+      "name": "Artisan Tea Collection",
+      "description": "Rare single-origin teas from Darjeeling & Formosa, served in gold-rimmed bone china",
+      "price": "$28",
+      "image": "../images/drinks.png",
+      "badge": ""
+    }
+  ],
+  "gallery": [
+    { "id": 1, "src": "../images/hero.png", "caption": "The Royal Dining Hall" },
+    { "id": 2, "src": "../images/gallery1.png", "caption": "Romantic Dining Experience" },
+    { "id": 3, "src": "../images/starters.png", "caption": "Golden Caviar Blinis" },
+    { "id": 4, "src": "../images/main-course.png", "caption": "A5 Wagyu Tenderloin" },
+    { "id": 5, "src": "../images/desserts.png", "caption": "Chocolate Royal Dome" },
+    { "id": 6, "src": "../images/drinks.png", "caption": "Royal Champagne Ceremony" }
+  ],
+  "testimonials": [
+    {
+      "name": "Lady Catherine M.",
+      "role": "Food Critic, The Gastronome",
+      "text": "Royal of Royal is not merely a restaurant — it is a pilgrimage for the senses. The A5 Wagyu alone justifies the trip from London.",
+      "stars": 5
+    },
+    {
+      "name": "James Harrington",
+      "role": "Forbes Travel Guide",
+      "text": "Three Michelin stars cannot fully capture what awaits here. The service is impeccably choreographed, the cuisine a revelation.",
+      "stars": 5
+    },
+    {
+      "name": "Sofia Al-Rashid",
+      "role": "International Gourmet Magazine",
+      "text": "Every detail at Royal of Royal speaks of a profound respect for the guest. This is dining elevated to high art.",
+      "stars": 5
+    }
+  ]
+}

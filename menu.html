@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu | Royal of Royal – Luxury Fine Dining</title>
+<meta name="description" content="Explore the exquisite menu at Royal of Royal. Starters, Main Courses, Desserts, and Fine Wines curated by our Michelin-starred chefs.">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar scrolled" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-main">♛ Royal of Royal</span>
+    <span class="logo-sub">Fine Dining Est. 1998</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="dark-mode-btn" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+    <a href="contact.html#reservation" class="btn-reserve-nav">Reserve</a>
+  </div>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+  <a href="contact.html#reservation">Reserve a Table</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('images/main-course.png')"></div>
+  <div class="page-hero-content">
+    <span class="section-label" style="text-align:center;display:block">Culinary Excellence</span>
+    <h1 class="section-title">Our <span>Menu</span></h1>
+    <div class="gold-divider centered"></div>
+    <p style="color:rgba(255,255,255,.7);font-size:.9rem;letter-spacing:1px">Crafted with passion. Served with perfection.</p>
+  </div>
+</div>
+
+<!-- MENU SECTION -->
+<section class="menu-section" id="menu-content">
+  <div class="container">
+    <div class="menu-filter-tabs" id="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="starters">Starters</button>
+      <button class="filter-tab" data-filter="main">Main Course</button>
+      <button class="filter-tab" data-filter="desserts">Desserts</button>
+      <button class="filter-tab" data-filter="drinks">Wines & Spirits</button>
+    </div>
+    <div class="menu-grid" id="menu-grid">
+      <!-- Populated by JS -->
+      <div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--gray)">
+        <i class="fas fa-spinner fa-spin" style="font-size:2rem;color:var(--gold)"></i>
+        <p style="margin-top:1rem">Loading menu...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <span class="section-label" style="text-align:center;display:block">Ready to Dine?</span>
+  <h2 class="section-title" data-animate>Reserve Your <span>Table</span></h2>
+  <div class="gold-divider centered"></div>
+  <p class="section-subtitle" style="margin:0 auto 2.5rem;text-align:center">Experience these masterpieces in person. Book your table today.</p>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap" data-animate>
+    <a href="contact.html#reservation" class="btn-primary"><i class="fas fa-calendar-check"></i> Book a Table</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo-main">♛ Royal of Royal</span>
+      <p>An icon of culinary excellence since 1998.</p>
+      <div class="social-links" style="margin-top:1.5rem">
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>Navigate</h4>
+      <a href="index.html">Home</a><a href="menu.html">Menu</a>
+      <a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col"><h4>Menu</h4>
+      <a href="#" onclick="filterMenu('starters')">Starters</a>
+      <a href="#" onclick="filterMenu('main')">Main Course</a>
+      <a href="#" onclick="filterMenu('desserts')">Desserts</a>
+      <a href="#" onclick="filterMenu('drinks')">Wines & Spirits</a>
+    </div>
+    <div class="footer-col"><h4>Contact</h4>
+      <a href="tel:+18007692567"><i class="fas fa-phone" style="margin-right:.5rem;color:var(--gold)"></i>+1 (800) 769-2567</a>
+      <a href="contact.html"><i class="fas fa-map-marker-alt" style="margin-right:.5rem;color:var(--gold)"></i>123 Royal Ave, Beverly Hills</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Royal of Royal. All rights reserved.</p>
+    <a href="admin/index.html" style="color:var(--gray);font-size:.8rem">Admin</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

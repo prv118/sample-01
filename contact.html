@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Reservations | Royal of Royal – Luxury Fine Dining</title>
+<meta name="description" content="Contact Royal of Royal or reserve your table at Beverly Hills' premier fine dining restaurant. We look forward to welcoming you.">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-main">♛ Royal of Royal</span>
+    <span class="logo-sub">Fine Dining Est. 1998</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a><a href="contact.html" class="active">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="dark-mode-btn" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+    <a href="#reservation" class="btn-reserve-nav">Reserve</a>
+  </div>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+  <a href="#reservation">Reserve a Table</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('images/gallery1.png')"></div>
+  <div class="page-hero-content">
+    <span class="section-label" style="text-align:center;display:block">Get in Touch</span>
+    <h1 class="section-title">Contact <span>Us</span></h1>
+    <div class="gold-divider centered"></div>
+    <p style="color:rgba(255,255,255,.7);font-size:.9rem;letter-spacing:1px">We welcome your queries and reservations.</p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="contact-section" style="padding:6rem 5%">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="contact-info-card" data-animate>
+          <span class="section-label">Reach Us</span>
+          <h2 class="section-title" style="font-size:2rem">Contact <span>Information</span></h2>
+          <div class="gold-divider"></div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p id="contact-phone"><a href="tel:+18007692567" style="color:var(--cream)">+1 (800) 769-2567</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p id="contact-email"><a href="mailto:reservations@royalofroyalrestaurant.com" style="color:var(--cream)">reservations@royalofroyal.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Address</h4>
+              <p id="contact-address">123 Royal Avenue, Beverly Hills, CA 90210</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Hours</h4>
+              <p>Tue–Sun: 6:00 PM – 11:00 PM<br>Closed Monday</p>
+            </div>
+          </div>
+          <div style="margin-top:1rem">
+            <h4 style="font-size:.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem">Follow Us</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="map-container" data-animate>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7152203583643!2d-118.4003563!3d34.0736208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147ab%3A0xd6c7c379fd081ed1!2sBeverly+Hills%2C+CA%2C+USA!5e0!3m2!1sen!2sus!4v1615999999999!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Royal of Royal Location"></iframe>
+        </div>
+      </div>
+
+      <!-- RESERVATION FORM -->
+      <div class="reservation-form" id="reservation" data-animate>
+        <h2 class="form-title">♛ Reserve Your Table</h2>
+        <p class="form-subtitle">Complete the form below and we will confirm your reservation within 24 hours.</p>
+        <form id="reservation-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-name">Full Name *</label>
+              <input type="text" id="res-name" placeholder="Your full name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="res-email">Email *</label>
+              <input type="email" id="res-email" placeholder="your@email.com" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-phone">Phone</label>
+              <input type="tel" id="res-phone" placeholder="+1 (000) 000-0000" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="res-guests">Number of Guests *</label>
+              <select id="res-guests" required>
+                <option value="">Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7-10">7–10 Guests</option>
+                <option value="10+">10+ Guests (Private Dining)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-date">Date *</label>
+              <input type="date" id="res-date" required>
+            </div>
+            <div class="form-group">
+              <label for="res-time">Preferred Time *</label>
+              <select id="res-time" required>
+                <option value="">Select time</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="18:30">6:30 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="19:30">7:30 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="20:30">8:30 PM</option>
+                <option value="21:00">9:00 PM</option>
+                <option value="21:30">9:30 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="res-occasion">Special Occasion</label>
+            <select id="res-occasion">
+              <option value="">None</option>
+              <option value="birthday">Birthday</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="proposal">Proposal</option>
+              <option value="business">Business Dinner</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="res-requests">Special Requests</label>
+            <textarea id="res-requests" placeholder="Dietary requirements, allergies, seating preferences, or any special requests..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center" id="submit-btn">
+            <i class="fas fa-calendar-check"></i> Confirm Reservation
+          </button>
+        </form>
+        <div class="form-success" id="form-success">
+          <div class="check-icon">✅</div>
+          <h3 style="font-size:1.5rem;margin-bottom:.5rem;color:var(--gold)">Reservation Confirmed!</h3>
+          <p style="color:var(--gray)">Thank you for your reservation. We will contact you within 24 hours to confirm your table at Royal of Royal.</p>
+          <div class="gold-divider centered" style="margin-top:1.5rem"></div>
+          <p style="color:var(--gold);font-style:italic;font-size:1.1rem;margin-top:1rem">We look forward to welcoming you. ♛</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><span class="logo-main">♛ Royal of Royal</span><p>An icon of culinary excellence since 1998.</p></div>
+    <div class="footer-col"><h4>Navigate</h4>
+      <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col"><h4>Cuisine</h4>
+      <a href="menu.html">Starters</a><a href="menu.html">Main Course</a>
+      <a href="menu.html">Desserts</a><a href="menu.html">Wines & Spirits</a>
+    </div>
+    <div class="footer-col"><h4>Contact</h4>
+      <a href="tel:+18007692567">+1 (800) 769-2567</a>
+      <a href="mailto:reservations@royalofroyal.com">reservations@royalofroyal.com</a>
+      <a href="#">123 Royal Ave, Beverly Hills</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Royal of Royal. All rights reserved.</p>
+    <a href="admin/index.html" style="color:var(--gray);font-size:.8rem">Admin</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/reservation.js"></script>
+<script>
+function initContactPage(data) {
+  if (!data || !data.site) return;
+  const s = data.site;
+  const phoneEl = document.getElementById('contact-phone');
+  const emailEl = document.getElementById('contact-email');
+  const addrEl = document.getElementById('contact-address');
+  if (phoneEl && s.phone) phoneEl.innerHTML = `<a href="tel:${s.phone.replace(/\D/g,'')}" style="color:var(--cream)">${s.phone}</a>`;
+  if (emailEl && s.email) emailEl.innerHTML = `<a href="mailto:${s.email}" style="color:var(--cream)">${s.email}</a>`;
+  if (addrEl && s.address) addrEl.textContent = s.address;
+  // Set min date to today
+  const dateInput = document.getElementById('res-date');
+  if (dateInput) {
+    const today = new Date(); today.setDate(today.getDate() + 1);
+    dateInput.min = today.toISOString().split('T')[0];
+  }
+}
+</script>
+</body>
+</html>

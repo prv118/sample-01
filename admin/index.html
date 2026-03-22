@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login | Royal of Royal</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="../styles/admin.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="login-page">
+  <div class="login-box">
+    <div class="login-crown">♛</div>
+    <h1 class="login-title">Royal of Royal</h1>
+    <p class="login-sub">Admin Panel Access</p>
+    <form id="login-form" novalidate>
+      <div class="form-group">
+        <label for="admin-password">Admin Password</label>
+        <input type="password" id="admin-password" placeholder="Enter admin password" required autocomplete="current-password">
+      </div>
+      <button type="submit" class="login-btn">
+        <i class="fas fa-crown"></i> Access Dashboard
+      </button>
+      <p class="login-error" id="login-error">
+        <i class="fas fa-exclamation-circle"></i> Incorrect password. Please try again.
+      </p>
+    </form>
+    <p style="margin-top:2rem;font-size:.75rem;color:var(--gray)">
+      <a href="../index.html" style="color:var(--gold)"><i class="fas fa-arrow-left"></i> Return to Website</a>
+    </p>
+  </div>
+</div>
+<script>
+(function() {
+  // Check if already logged in
+  if (sessionStorage.getItem('ror_admin') === 'true') {
+    window.location.href = 'dashboard.html';
+    return;
+  }
+
+  // Simple hash function
+  async function sha256(message) {
+    const msgBuffer = new TextEncoder().encode(message);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  // Store hashed default password
+  const DEFAULT_HASH = 'b8a9de97e12d2bd8abb2c4be72eb3f6a9c40c55b3c3c88c64e7a5ecfb9f3cd5e';
+
+  function getStoredHash() {
+    return localStorage.getItem('ror_admin_hash') || DEFAULT_HASH;
+  }
+
+  document.getElementById('login-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const pass = document.getElementById('admin-password').value;
+    const hash = await sha256(pass);
+    const stored = getStoredHash();
+
+    // Also check against raw default if hash not yet set
+    const defaultCheck = await sha256('prv111');
+    const storedOrDefault = localStorage.getItem('ror_admin_hash') || defaultCheck;
+
+    if (hash === storedOrDefault) {
+      sessionStorage.setItem('ror_admin', 'true');
+      window.location.href = 'dashboard.html';
+    } else {
+      document.getElementById('login-error').style.display = 'block';
+      document.getElementById('admin-password').value = '';
+      document.getElementById('admin-password').focus();
+    }
+  });
+})();
+</script>
+</body>
+</html>
